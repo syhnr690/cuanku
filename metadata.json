@@ -1,5 +1,6 @@
 {
-  "name": "DuitKu - Personal Finance Tracker",
+  "name": "CuanKu",
   "description": "A simple and elegant personal finance application to track your daily income and expenses.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

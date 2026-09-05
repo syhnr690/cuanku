@@ -2,9 +2,7 @@ import express from "express";
 import { createServer as createViteServer } from "vite";
 import Database from "better-sqlite3";
 import path from "path";
-import { fileURLToPath } from "url";
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const db = new Database("finance.db");
 
 // Initialize database
@@ -153,9 +151,10 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     // Serve static files in production
-    app.use(express.static(path.join(__dirname, "dist")));
+    const distPath = path.join(process.cwd(), "dist");
+    app.use(express.static(distPath));
     app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, "dist", "index.html"));
+      res.sendFile(path.join(distPath, "index.html"));
     });
   }
 

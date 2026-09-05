@@ -159,7 +159,7 @@ export default function App() {
           <div className="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-emerald-200">
             <Wallet size={24} />
           </div>
-          <h1 className="text-xl font-bold tracking-tight">DuitKu</h1>
+          <h1 className="text-xl font-bold tracking-tight">CuanKu</h1>
         </div>
 
         <nav className="flex-1 space-y-1">
@@ -196,7 +196,7 @@ export default function App() {
         </nav>
 
         <div className="mt-auto pt-4 border-t border-slate-100 hidden md:block">
-          <p className="text-[10px] text-slate-400 text-center uppercase tracking-widest font-bold">DuitKu v1.0</p>
+          <p className="text-[10px] text-slate-400 text-center uppercase tracking-widest font-bold">CuanKu v1.0</p>
         </div>
       </aside>
 
